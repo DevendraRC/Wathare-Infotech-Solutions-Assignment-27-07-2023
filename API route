@@ -1,0 +1,17 @@
+  // routes/api.ts
+import express from 'express';
+import Data from '../models/data';
+
+const router = express.Router();
+
+// Fetch data from the database
+router.get('/data', async (req, res) => {
+  try {
+    const data = await Data.find().sort('-timestamp').limit(100);
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ message: 'Server Error' });
+  }
+});
+
+export default router;
