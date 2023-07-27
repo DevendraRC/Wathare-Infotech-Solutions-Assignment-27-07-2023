@@ -1,0 +1,13 @@
+// models/data.ts
+import mongoose from 'mongoose';
+
+const dataSchema = new mongoose.Schema({
+  // Define the structure of your data
+  // Example:
+  timestamp: { type: Date, default: Date.now },
+  value: { type: Number, required: true },
+});
+
+const Data = mongoose.model('Data', dataSchema);
+
+export default Data;
