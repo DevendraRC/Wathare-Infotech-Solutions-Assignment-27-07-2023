@@ -1,0 +1,5 @@
+# In the root directory
+npm start
+
+# In the 'client' directory
+npm start
