@@ -5,3 +5,4 @@ cd ..
 npx create-react-app client --template typescript
 cd client
 
+npm install axios react-chartjs-2 chart.js
