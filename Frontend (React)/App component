@@ -1,0 +1,14 @@
+// src/App.js
+import React from 'react';
+import Chart from './components/Chart';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Your Chart Application</h1>
+      <Chart />
+    </div>
+  );
+}
+
+export default App;
