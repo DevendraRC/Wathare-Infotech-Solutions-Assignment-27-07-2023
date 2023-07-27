@@ -1,0 +1,7 @@
+# Go back to the project root directory
+cd ..
+
+# Create a new React app
+npx create-react-app client --template typescript
+cd client
+
